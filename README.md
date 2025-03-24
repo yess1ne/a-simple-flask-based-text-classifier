@@ -16,15 +16,7 @@ It takes user input (e.g., a sentence or phrase) and predicts whether the sentim
 - [Joblib](https://joblib.readthedocs.io/)
 ---
 ## 📂 Project Structure
-flask-ai-app/ 
-│ ├── app.py #Flask web app
-  ├── train_model.py # Script to train and save the model
-  ├── model/
-        │  ├── classifier.pkl # Trained model 
-        │ └── vectorizer.pkl # CountVectorizer instance 
-  ├── templates/ 
-        │ └── index.html # Web UI for input and prediction
-  └── venv/ # Virtual environment (not pushed to GitHub)
+<pre><code>```bash flask-ai-app/ ├── app.py # Flask web app ├── train_model.py # Script to train and save the model ├── model/ │ ├── classifier.pkl # Trained model │ └── vectorizer.pkl # CountVectorizer instance ├── templates/ │ └── index.html # Web UI for input and prediction └── venv/ # Virtual environment (not pushed to GitHub) ```</code></pre>
   
 ---
 ## ⚙️ How to Run Locally
