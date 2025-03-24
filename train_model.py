@@ -16,7 +16,11 @@ X = vectorizer.fit_transform(texts)#ML models don't understand words, but number
 # Model
 model = MultinomialNB()
 model.fit(X, labels)
-
+#MultinomialNB = Multinomial Naive Bayes — a classic and fast text classification algorithm.
+# Intuition:
+#It assumes that features (words) are independent — a simplification that works surprisingly well in practice.
+#Multinomial version is best when features are counts (like word frequency).
+# It’s a good default model for text classification.
 # Save model & vectorizer
 joblib.dump(model, "model/classifier.pkl")
 joblib.dump(vectorizer, "model/vectorizer.pkl")
